@@ -1,0 +1,129 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: #1a0a15;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.system{
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    padding-top: 100%;
+}
+
+@media (min-width:700px){
+    .system{
+        padding-top: 700px;
+    }
+}
+
+.system_sun{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.system_icon{
+    width: 100%;
+    height: 100%;
+}
+
+.system_planet{
+    position: absolute;
+    top: 50%;
+    left: -12px;
+    width: 25px;
+    height: 25px;
+    transform: translateY(-50%);
+}
+
+.system_orbit{
+    position: absolute;
+    border: 1.5px solid rgba(255, 255, 255, 0.3);
+    border-radius: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: spin infinite linear both;
+}
+
+.system_orbit-sun{
+    width: calc(10%);
+    height: calc(10%);
+    border: none;
+    animation-duration: 10s;
+}
+
+.system_orbit-mercury{
+    width: calc(20%);
+    height: calc(20%);
+    animation-duration: 1s;
+}
+
+.system_orbit-venus{
+    width: calc(30%);
+    height: calc(30%);
+    animation-duration: 2.6s;
+}
+
+.system_orbit-earth{
+    width: calc(40%);
+    height: calc(40%);
+    animation-duration: 4.1s;
+}
+
+.system_orbit-mars{
+    width: calc(50%);
+    height: calc(50%);
+    animation-duration: 7.8s;
+}
+
+.system_orbit-jupiter{
+    width: calc(60%);
+    height: calc(60%);
+    animation-duration: 49.8s;
+}
+
+.system_orbit-saturn{
+    width: calc(70%);
+    height: calc(70%);
+    animation-duration: 120.3s;
+}
+
+.system_orbit-uranus{
+    width: calc(80%);
+    height: calc(80%);
+    animation-duration: 348.4s;
+}
+
+.system_orbit-neptune{
+    width: calc(90%);
+    height: calc(90%);
+    animation-duration: 684.4s;
+}
+
+.system_orbit-pluto{
+    width: calc(100%);
+    height: calc(100%);
+    animation-duration: 1028.6s;
+}
+
+@keyframes spin{
+    from{
+        transform: translate(-50%, -50%);
+    }
+    to{
+        transform: translate(-50%, -50%), rotate(360deg);
+    }
+}

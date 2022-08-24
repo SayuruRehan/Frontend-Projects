@@ -3,6 +3,7 @@ const copyEl = document.getElementById("copy");
 const lenEl = document.getElementById("len");
 const lowerEl = document.getElementById("lower");
 const upperEl = document.getElementById("upper");
+const generateEl = document.getElementById("generate");
 const numberEl = document.getElementById("number");
 const symbolEl = document.getElementById("symbol");
 const upperLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -28,7 +29,7 @@ function getSymbol(){
 
 function generatePassword(){
     const len = lenEl.value;
-    let generatedPassword = "";
+    let password = "";
     for (let i = 0; i < len; i++){
         const x = generateX();
         password += x;
@@ -71,4 +72,3 @@ function generateX(){
     }
     )
     }
-    
